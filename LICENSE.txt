@@ -1,0 +1,21 @@
+Copyright (c) 2024 Andries Molatlhegi
+M-Sithole Digital Agency (m-sithole-digital-agency.web.app)
+
+All rights reserved.
+
+This website and its source code, including all HTML, CSS, JavaScript, images, and design elements, are the property of Andries Molatlhegi and M-Sithole Digital Agency. 
+
+Unauthorized copying, modification, distribution, or use of this material — in whole or in part — is strictly prohibited.
+
+You may view, explore, and learn from this project for educational purposes, but you may not:
+
+- Claim authorship or ownership of any part of the code or design,
+- Reproduce or reuse the content for commercial purposes,
+- Publish modified versions under your own or any other name,
+- Remove or alter any copyright or licensing notices.
+
+If you wish to use any part of this project in your own work, please contact:
+?? msitholeholdings@gmail.com | ?? +27 64 243 6568
+
+Thank you for respecting original work.
+
