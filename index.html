@@ -201,7 +201,7 @@
                                     <li style="margin-bottom: 12px;"><i class="fas fa-mountain" style="color: #FF8C00; margin-right: 10px;"></i> Mining Operations</li>
                                     <li style="margin-bottom: 12px;"><i class="fas fa-tractor" style="color: #FF8C00; margin-right: 10px;"></i> Agricultural Solutions</li>
                                 </ul>
-                                <a class="btn btn-primary nav-link" data-page="services" style="display: inline-flex; align-items: center; gap: 8px;">
+                                <a class="btn btn-primary" href="services.html" style="display: inline-flex; align-items: center; gap: 8px;">
                                     View All Services <i class="fas fa-arrow-right"></i>
                                 </a>
                             </div>
@@ -311,11 +311,43 @@
                         </div>
                         
                         <div class="cta-buttons" style="display: flex; gap: 20px; justify-content: center; margin-top: 40px;">
-                            <a class="btn btn-primary" href="https://wa.me/27615840836" target="_blank" style="display: inline-flex; align-items: center; gap: 8px;">
-                                Place Order Now <i class="fas fa-arrow-right"></i>
-                            </a>
-                            <a class="btn btn-outline nav-link" data-page="contact">Contact Our Team</a>
-                        </div>
+    <a class="btn btn-primary" href="order.html" style="display: inline-fle    document.getElementById("quick-whatsapp").addEventListener("submit", function (e) {
+        e.preventDefault();
+    
+        // Get form values
+        const formData = {
+            name: document.getElementById("name").value.trim(),
+            phone: document.getElementById("phone").value.trim(),
+            location: document.getElementById("location").value.trim(),
+            message: document.getElementById("message").value.trim()
+        };
+    
+        // Validate form
+        if (!formData.name || !formData.location || !formData.message) {
+            alert("Please fill in all required fields");
+            return;
+        }
+    
+        // Build WhatsApp message with default greeting
+        const whatsappNumber = "27615840836";
+        const message = `Hi admin, I would like to enquire about the services you are providing.%0A%0A` +
+                       `My details:%0A` +
+                       `Name: ${encodeURIComponent(formData.name)}%0A` +
+                       `Phone: ${encodeURIComponent(formData.phone)}%0A` +
+                       `Location: ${encodeURIComponent(formData.location)}%0A` +
+                       `Message: ${encodeURIComponent(formData.message)}`;
+    
+        // Open WhatsApp and close popup
+        window.open(`https://wa.me/${whatsappNumber}?text=${message}`, "_blank");
+        hidePopup();
+        
+        // Reset form
+        this.reset();
+    });ems: center; gap: 8px;">
+        Place Order Now <i class="fas fa-arrow-right"></i>
+    </a>
+    <a class="btn btn-outline" href="https://wa.me/27615840836" target="_blank">Contact Our Team</a>
+</div>
                     </div>
                 </div>
             </section>
@@ -413,12 +445,14 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
-        // Build WhatsApp message
+        // Build WhatsApp message with default greeting
         const whatsappNumber = "27615840836";
-        const message = `Hello, my name is ${encodeURIComponent(formData.name)}%0A` +
-                       `Phone: ${encodeURIComponent(formData.phone)}%0A` +
-                       `Location: ${encodeURIComponent(formData.location)}%0A` +
-                       `Message: ${encodeURIComponent(formData.message)}`;
+        const message = `Hi admin, I would like to enquire about the services you are providing.%0A%0A` +
+                   `My details:%0A` +
+                   `Name: ${encodeURIComponent(formData.name)}%0A` +
+                   `Phone: ${encodeURIComponent(formData.phone)}%0A` +
+                   `Location: ${encodeURIComponent(formData.location)}%0A` +
+                   `Message: ${encodeURIComponent(formData.message)}`;
 
         // Open WhatsApp and close popup
         window.open(`https://wa.me/${whatsappNumber}?text=${message}`, "_blank");
